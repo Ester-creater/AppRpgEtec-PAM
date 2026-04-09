@@ -8,12 +8,12 @@ namespace AppRpgEtec.Services.Usuarios
     public class UsuarioService : Request
     {
         private readonly Request _request;
-        private const string _apiUrlBase = "http://abc.somee.com/RpgApi/Usuarios";
+        private const string _apiUrlBase = "http://luizsilva12.somee.com/RpgApi/Usuarios";
         // private const string _apiUrlBase = "http://abc.azurewebsites.net/Usuarios";
 
         public UsuarioService()
         {
-            _request = new Request();''''
+            _request = new Request();
         }
 
         public async Task<Usuario> PostRegistrarUusarioAsync(Usuario u)
