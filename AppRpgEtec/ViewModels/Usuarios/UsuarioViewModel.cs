@@ -1,11 +1,15 @@
 ﻿using AppRpgEtec.Models;
 using AppRpgEtec.Services.Usuarios;
+using AppRpgEtec.ViewModels.Armas;
+using AppRpgEtec.ViewModels.Personagens;
+using AppRpgEtec.Views.Armas;
 using AppRpgEtec.Views.Personagens;
 using AppRpgEtec.Views.Usuarios;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using ListagemView = AppRpgEtec.Views.Armas.ListagemView;
 
 namespace AppRpgEtec.ViewModels.Usuarios
 {
@@ -79,6 +83,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     Preferences.Set("UsuarioUsername", uAutenticado.Username);
 
                     Preferences.Set("UsuarioPerfil", uAutenticado.Perfil);
+
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
@@ -86,7 +91,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     await Application.Current.MainPage
                         .DisplayAlert("Informação", mensagem, "Ok");
 
-                    Application.Current.MainPage = new ListagemView();
+                    Application.Current.MainPage = new AppShell();
                 }
                 else
                 {

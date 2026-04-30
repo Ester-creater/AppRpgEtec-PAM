@@ -9,7 +9,7 @@ namespace AppRpgEtec.Services.Personagens
     public class PersonagemService : Request
     {
         private readonly Request _request;
-        private const string apiUrlBase = "https://xyz.azurewebsites.net/Personagens";
+        private const string apiUrlBase = "http://luizsilva12.somee.com/RpgApi/Personagens";
 
         private string _token;
         public PersonagemService(string token)
@@ -18,7 +18,7 @@ namespace AppRpgEtec.Services.Personagens
             _token = token;
         }
 
-        public async Task<int> PostPersonagemAsync(PersonagemService p)
+        public async Task<int> PostPersonagemAsync(Personagem p)
         {
             return await _request.PostReturnIntAsync(apiUrlBase, p, _token);
         }
