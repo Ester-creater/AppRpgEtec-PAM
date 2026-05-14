@@ -36,7 +36,7 @@
                   ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage" />
 
     <ShellContent Title="Usuários" Icon="menuusuarios.png" 
-                  ContentTemplate="{DataTemplate viewUsuarios:ListagemView}" />
+                  ContentTemplate="{DataTemplate viewUsuarios:LocalizacaoView}" />
 
     <ShellContent Title="Personagens" Icon="menupersonagens.png"
                   ContentTemplate="{DataTemplate viewPersonagens:ListagemView}" />

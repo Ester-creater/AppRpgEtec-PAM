@@ -133,7 +133,7 @@ namespace AppRpgEtec.ViewModels.Usuarios
                     .DisplayAlert("Informação", ex.Message + " Detalhes: " + ex.InnerException, "Ok");
             }
         }
-
+        //Git
         #endregion
 
         public async Task DirecionarParaCadastro() //Método para ecibição da view de Cadastro

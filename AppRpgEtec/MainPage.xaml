@@ -12,7 +12,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     
-    
+ 
     <ContentPage.Content>
         <VerticalStackLayout Padding="25" Spacing="30">
             <Frame
