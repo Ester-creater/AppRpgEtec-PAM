@@ -24,6 +24,7 @@ namespace AppRpgEtec.Services.Usuarios
             _token = token;
         }
 
+
         public async Task<Usuario> PostRegistrarUusarioAsync(Usuario u)
         {
             string urlComplementar = "/Registrar";
